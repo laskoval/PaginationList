@@ -1,0 +1,26 @@
+﻿@model List<User>
+@{
+    ViewBag.Title = "List Users";
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Phone</th>
+            <th>E-Mail</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (User user in Model)
+    {
+        <tr>
+            <td>@user.LastName, @user.FirstName</td>
+            <td>@user.Phone</td>
+            <td>@user.EMail</td>
+            <td>@user.Street, @user.City, @user.RegionCode &nbsp;@user.PostalCode</td>
+        </tr>
+    }
+    </tbody>
+</table>
