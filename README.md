@@ -48,6 +48,7 @@ For this project, you will follow instructions below to create the pagination li
 1. Add a Dropdown Button to set the page size.
     - [Dropdown Button is from Bootstrap](https://getbootstrap.com/docs/5.3/components/dropdowns/)
         - `<button class="btn btn-secondary dropdown-toggle" type="button" id="buttonPageSize" data-bs-toggle="dropdown"
+
             aria-haspopup="true" aria-expanded="false">Page Size (@Model.PageSize)</button>`
     - Place the button above the table like in the figures below.
     - ![Figure Ch6_01](./wwwroot/img/Ch6Lab_01.jpg)
